@@ -91,6 +91,7 @@ ul {
 .contacts-top {
   display: flex;
   align-items: center;
+  margin-left: auto;
 }
 
 /* Логотип */
@@ -178,7 +179,6 @@ ul {
   color: var(--accent-color);
 }
 .mail-link {
-  margin-left: 331px;
   margin-right: 50px;
 }
 
@@ -201,7 +201,7 @@ ul {
 .hero {
   background-color: var(--darkbgr-color);
   padding-top: 200px;
-  padding-bottom: 210px;
+  padding-bottom: 200px;
   text-align: center;
 }
 
@@ -225,6 +225,7 @@ ul {
   padding-right: 32px;
   padding-bottom: 10px;
   padding-left: 32px;
+  border: none;
 }
 
 .hero-btn:hover,
@@ -235,7 +236,7 @@ ul {
 
 .advantages,
 .about {
-  background-color: var(--mainbgr-color);
+  background-color: var(--primary-white-color);
 }
 .advantages-title {
   font-family: var(--main-font);
@@ -279,8 +280,6 @@ ul {
 .advantages-container {
   display: flex;
   justify-content: space-between;
-  margin-right: 30px;
-  margin-top: 10px;
 }
 
 .about-container {
@@ -318,7 +317,6 @@ ul {
   color: var(--title-text-color);
   text-align: center;
   margin-bottom: 10px;
-  
 }
 .team-job {
   font-family: var(--main-font);
@@ -331,27 +329,24 @@ ul {
 
   color: var(--secondary-text-color);
   text-align: center;
-  margin-bottom: 30px;
-}
-.team-img {
-margin-bottom: 30px;
 }
 
-.team-card {
-  width: 270px;
-  height: 368px;
-  background: var(--primary-white-color));
-  /* material shadow v1 */
-
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
+.team-div {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  box-shadow: 0px 1px 3px rgb(0 0 0 / 12%), 0px 1px 1px rgb(0 0 0 / 14%),
+    0px 2px 1px rgb(0 0 0 / 20%);
   border-radius: 0px 0px 4px 4px;
-  margin-left: 30px;
-  flex-basis: calc((100% - 90px) / 3); 
+  background-color: var(--primary-white-color);
 }
+.team-card {
+  margin-left: 30px;
+  flex-basis: calc((100% - 120px) / 4);
+}
+
 .team-container {
   display: flex;
- margin-left: -30px;
+  margin-left: -30px;
 }
 /* Footer */
 .footer {
@@ -383,7 +378,6 @@ margin-bottom: 30px;
   letter-spacing: 0.03em;
 
   color: var(--primary-white-color);
-
 }
 
 .footer-address {
@@ -410,7 +404,6 @@ margin-bottom: 30px;
   letter-spacing: 0.03em;
 
   color: rgba(255, 255, 255, 0.6);
-
 }
 .footer-mail:hover,
 .footer-mail:focus,
@@ -426,7 +419,6 @@ margin-bottom: 30px;
 .footer-contact:not(:last-child) {
   margin-bottom: 9px;
 }
-
 
 /* Портфолио */
 
@@ -446,46 +438,45 @@ margin-bottom: 30px;
   letter-spacing: 0.03em;
 
   cursor: pointer;
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-border-radius: 4px;
+  background: #f5f4fa;
+  border-radius: 4px;
   border: none;
-margin-right: 8px;
-margin-bottom: 50px;
-padding: 6px 22px;
-
+  padding: 6px 22px;
 }
+.button-li {
+  margin-right: 8px;
+}
+
 .filters .item:hover,
 .filters .item:focus {
   background-color: var(--accent-color);
   color: var(--primary-white-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
 }
 .parents {
   display: flex;
   text-align: center;
   justify-content: center;
+  margin-bottom: 50px;
 }
-
 
 /* -- h2 список наших проектов--> */
 .card {
-background: #FFFFFF;
-border: 1px solid #EEEEEE;
-box-sizing: border-box;
-border-top: none;
-padding: 20px 24px
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+  box-sizing: border-box;
+  border-top: none;
+  padding: 20px 24px;
 }
 
-
-
-.parents-projects
-{
+.parents-projects {
   display: flex;
   flex-wrap: wrap;
-margin-left: -30px;
- margin-top: -30px;
+  margin-left: -30px;
+  margin-top: -30px;
 }
-
-
 
 .portfolio-page {
   margin-left: 30px;
@@ -495,14 +486,14 @@ margin-left: -30px;
 
 .portfolio-link {
   text-decoration: none;
-  
+  display: block;
 }
 .project-title {
   font-family: var(--main-font);
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
-  line-height: 2x;
+  line-height: 2;
 
   letter-spacing: 0.06em;
 
@@ -514,7 +505,7 @@ margin-left: -30px;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
-  line-height: 30px;
+  line-height: 1.87;
   /* identical to box height, or 187% */
 
   letter-spacing: 0.03em;
