@@ -58,7 +58,9 @@ body {
 ul {
   list-style: none;
 }
-
+a {
+  display: block;
+}
 .container {
   width: 1200px;
   padding-left: 15px;
@@ -260,9 +262,10 @@ ul {
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
   margin-top: 10px;
+}
+.advantages-li:not(:last-child) {
   margin-right: 30px;
 }
-
 /* -- Чем мы занимаемся --> */
 
 .about-title {
@@ -416,7 +419,7 @@ ul {
 .footer-tel {
   text-decoration: none;
 }
-.footer-contact:not(:last-child) {
+.footer .link:not(:last-child) {
   margin-bottom: 9px;
 }
 
