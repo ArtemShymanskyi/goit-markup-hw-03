@@ -419,7 +419,7 @@ a {
 .footer-tel {
   text-decoration: none;
 }
-.footer .link:not(:last-child) {
+.footer-contact:not(:last-child) {
   margin-bottom: 9px;
 }
 
